@@ -1,0 +1,11 @@
+.header{
+    position: relative;
+		z-index: 2;
+    .menu{
+        width: 480px;
+        height: 650px;
+        background-color:#151515;
+        border-radius: 25px;
+        position: absolute;
+    }
+}

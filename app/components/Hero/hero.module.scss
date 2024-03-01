@@ -1,0 +1,56 @@
+.container{
+  display: flex;
+	flex-flow: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	background-color: #FFFFFF;
+
+	@media(max-width: 800px) {
+		height: 60vh;
+		padding-top: 64px;
+	}
+}
+
+.container .body{
+	text-align: center;
+	width: 90%;
+	position: relative;
+	z-index: 1;
+	pointer-events: none;
+	mix-blend-mode: difference;
+	color: #FFFFFF;
+}
+
+.container .grid{
+
+	display: flex;
+
+	height: 100%;
+
+	width: 100%;
+
+	overflow: hidden;
+
+	position: absolute;
+
+}
+
+
+
+.grid .column{
+
+	width: 5vw;
+
+}
+
+
+
+.column div{
+
+	width: 100%;
+
+	height: 5vw;
+}
