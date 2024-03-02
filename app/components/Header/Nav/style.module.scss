@@ -5,10 +5,11 @@
     padding: 100px 40px 50px 40px;
     height: 100%;
 		gap: 20px;
-		@media(max-width: 450px) {
+		@media(max-width: 640px) {
 			justify-content: center;
 			align-items: start;
-			gap: 40px;
+			gap: 20px;
+			padding: 100px 20px 25px 20px;
 		}
     .body{
 			z-index: 99999;
@@ -23,18 +24,32 @@
             text-decoration: none;
             color: #FFFFFF;
             font-size: 46px;
-						@media(max-width: 450px) {
-							font-size: 23px;
+						&:hover {
+							color: #F47209;
+							transition: all ease-in 0.3s;
+						}
+						@media(max-width: 640px) {
+							font-size: 1.2rem;
 						}
         }
     }
     .footer{
         display: flex;
         flex-wrap: wrap;
+				@media(max-width: 640px) {
+					flex-flow: column;
+				}
         a{
             width: 50%;
             margin-top: 5px;
 						color: #FFFFFF;
+						&:hover {
+							color: #F47209;
+							transition: all ease-in 0.3s;
+						}
+						@media(max-width: 640px) {
+							font-size: 0.875rem;
+						}
         }
     }
 }
