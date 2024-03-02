@@ -5,12 +5,13 @@ import Button from "./Button";
 import styles from "./style.module.scss";
 import Nav from "./Nav";
 
-const menu = {
+
+const menuMobile = {
   open: {
-    width: ["64vw"],
-    height: ["90vh"],
-    top: ["-16px"],
-    right: ["-25px"],
+		width: "300px",
+		height: "450px",
+		top: "-16px",
+		right: "-16px",
     transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] },
   },
   closed: {
@@ -26,9 +27,45 @@ const menu = {
     },
   },
 };
-console.log(menu);
+
+const menu = {
+  open: {
+    width: "480px",
+		height: "650px",
+		top: "-25px",
+		right: "-25px",
+    transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] },
+  },
+  closed: {
+    width: "100px",
+    height: "40px",
+    top: "0px",
+    right: "0px",
+    transition: {
+      duration: 0.75,
+      delay: 0.35,
+      type: "tween",
+      ease: [0.76, 0, 0.24, 1],
+    },
+  },
+};
+
 export default function Index() {
   const [isActive, setIsActive] = useState(false);
+	const [isMobile, setIsMobile] = useState(false);
+
+	const handleResize = () => {
+			setIsMobile(window.innerWidth <= 640);  
+	};
+
+	useEffect(() => {
+			handleResize();
+			window.addEventListener('resize', handleResize);
+
+			return () => {
+					window.removeEventListener('resize', handleResize);
+			};
+	}, []);
 
   return (
     <header className="py-6 border-b-[1px]">
@@ -41,7 +78,7 @@ export default function Index() {
         <div className={styles.header}>
           <motion.div
             className={styles.menu}
-            variants={menu}
+            variants={isMobile ? menuMobile : menu}				
             animate={isActive ? "open" : "closed"}
             initial="closed"
           >
