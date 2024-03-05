@@ -8,9 +8,11 @@
 	padding-right: 2rem;
 	background-color: #FFFFFF;
 
-	@media(max-width: 800px) {
+	@media(max-width: 650px) {
 		height: 60vh;
-		padding-top: 64px;
+	}
+	@media(min-width: 651px) and (max-width: 770px) {
+		height: 80vh;
 	}
 }
 

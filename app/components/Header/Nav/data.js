@@ -1,7 +1,7 @@
 export const links = [
     {
         title: "Projetos",
-        href: "http://localhost:3000/"
+        href: "#projetos"
     },
     {
         title: "Serviços",
@@ -23,19 +23,15 @@ export const links = [
 
 export const footerLinks = [
     {
-        title: "Facebook",
-        href: "/#"
-    },
-    {
         title: "LinkedIn",
-        href: "/#"
+        href: "https://www.linkedin.com/in/romariojs94"
     },
     {
-        title: "Instagram",
-        href: "/#"
+        title: "Behance",
+        href: "https://www.behance.net/romariojs94"
     },
     {
-        title: "Twitter",
-        href: "/#"
+        title: "Github",
+        href: "https://github.com/romariojs94"
     }
 ]

@@ -41,6 +41,8 @@ export default function index() {
                             animate="enter"
                             exit="exit"
                             key={`f_${i}`}
+														href={href}
+														target="_blank"
                         >
                             {title}
                         </motion.a>
