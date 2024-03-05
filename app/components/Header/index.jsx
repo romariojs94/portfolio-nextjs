@@ -70,9 +70,9 @@ export default function Index() {
     <header className="py-6 border-b-[1px]">
       <div className="container sm:container md:container lg:container mx-auto flex justify-between items-center">
         <div className="marca">
-          <h1 className="text-2xl sm:text-5xl md:text-6xl font-medium">
+          <p className="text-2xl sm:text-5xl md:text-6xl font-medium">
             Romário<span className="ponto">.</span>
-          </h1>
+          </p>
         </div>
         <div className="flex items-center gap-20">
           <div className="relative hidden sm:block">

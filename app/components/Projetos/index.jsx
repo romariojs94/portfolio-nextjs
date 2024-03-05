@@ -21,20 +21,21 @@ export default function projetos() {
 					</TabsContent>
 
           <TabsContent value="ecommerce" className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
-            <Link href="https://mmclean.com.br/" target="_blank">
+            <Link href="https://mmclean.com.br/" title="MM Clean" target="_blank" rrel="noopener noreferrer">
               <div className="overflow-hidden rounded-lg p-2 laptop:p-4 first:ml-0 link">
                 <div className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 h-auto mob:h-auto">
                   <Image
                     alt="Loja MM Clean - Ecommerce para produtos automotivos"
+										title="Loja MM Clean - Ecommerce para produtos automotivos"
                     src={img}
                     className="block max-h-full w-full object-cover hover:scale-110 transition-all ease-out duration-300"
                     width={400}
                     height={400}
                   />
                 </div>
-                <h1 className="mt-5 text-lg sm:text-3xl font-medium">
+                <h3 className="mt-5 text-lg sm:text-3xl font-medium">
                   Loja MM Clean - Ecommerce para produtos automotivos
-                </h1>
+                </h3>
               </div>
             </Link>
           </TabsContent>

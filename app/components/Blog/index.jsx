@@ -6,15 +6,16 @@ export default function Blog() {
   return (
     <div className="container mx-auto py-12 sm:py-28" id="blog">
       <div>
-        <h1 className="text-2xl font-semibold sm:text-6xl mb-14">
+        <h2 className="text-2xl font-semibold sm:text-6xl mb-14">
           Blog<span className="ponto">.</span>
-        </h1>
+        </h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         <div className="group">
           <div className="mb-6 overflow-hidden transition-all group-hover:scale-105 w-full relative">
             <Image
-              alt=""
+              alt="Imagem de um celular na mão escrito Hello World"
+							title="Hello World"
               src={HelloImg}
               width={1920}
               height={1280}

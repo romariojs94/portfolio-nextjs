@@ -43,6 +43,7 @@ export default function index() {
                             key={`f_${i}`}
 														href={href}
 														target="_blank"
+														rel='noopener noreferrer'
                         >
                             {title}
                         </motion.a>
