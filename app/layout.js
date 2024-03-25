@@ -6,7 +6,8 @@ const FiraCode = Fira_Code({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Romário J. Santos - Desenvolvedor Web Localizado em Blumenau/SC",
-  description: "Desenvolvo projetos Web focados nas melhores práticas de design e desenvolvimento, visando exclusividade para a sua empresa ou negócio.",
+  description: "Desenvolvimento de projetos Web com foco nas melhores práticas de design e desenvolvimento, visando exclusividade para a sua empresa ou negócio.",
+	favicon: "/favicon.ico",
 };
 
 export default function RootLayout({ children }) {
