@@ -8,10 +8,6 @@ export const links = [
         href: "#servicos"
     },
     {
-        title: "Recomendações",
-        href: "#recomendacoes"
-    },
-    {
         title: "Blog",
         href: "#blog"
     },
